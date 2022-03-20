@@ -1,0 +1,149 @@
+Django Features
+
+1.Admin site
+2.Object relational mapping => abstact database
+3.Authentication
+4.Caching
+5.Fast 
+
+Prerequists
+1.Basic knowlege in Python
+2.OOps concpets in python
+
+Tools
+1.Python install
+2.pip install pipenv  # virtual env 
+to check the path of our virtual env use this cmd,
+pipenv --venv
+3.Vs code 
+
+Setup
+1.create a directory
+2.Install Django using,
+pipenv install django 
+
+3.open in vscode
+4.create a virtual env for shell,
+pipenv shell
+
+5.Create a django project by using,
+django-admin # utility name
+django-admin startproject storefront  #here store front is our project name
+
+Exploring the directory
+1.__init__.py => dependecncy file
+2.settings.py => application settings file
+3.urls.py => app url file
+4.wsgi and asgi files are app deployment files
+5.manage.py => going to be a main server file which going to run our application on server
+
+
+Running App
+
+1.python manage.py runserver 5005  #5005 is explicit port number 
+8000 is default port number but if any other app usig the port id we need to give explicit ID like above mentioned.
+
+http://127.0.0.1.8000/
+
+
+Explore the setting.py file
+1.See the Installed Apps 
+
+Creating an app 
+python manage.py createapp <appname>
+
+Explore the dir of <appname> folder
+1.migration folder is for generating DB tabels
+2.admin file is defining an admin interface your app
+3.apps.py is for configuration file for ur app
+4.models.py is for creating a db model for ur app
+5.tests.py is for writing unit test
+6.views.py is a request handler file
+
+Next add your app name in your settings.py under Installed Apps section like this,
+
+INSTALLED_APPS=[
+'asasdfdf',
+'qewertsgh',
+'wreryet',
+'<appname>'
+]
+
+
+Views.py
+views.py file is a request handler file 
+we all know abt how https works
+
+request -> response 
+
+in otherframe works we called it as actions in django we say it as view
+
+Code editor:
+
+views.py
+
+#import this class 
+from django.http import HttpRequest  
+
+#start creating your functions for handling request 
+#Eg:
+def say_hello(request):
+   # in this function we can do lots of stuffs like,
+   #pull data from db
+   #Transform 
+   #send email and so on 
+   return HttpsResponse("Hello Ashwin !")
+
+Now run this method in server, but listen we need a route or endpoint to run any file or methods in our browser or server 
+so its a time to create a routes for our function say_hello() now,
+
+creating routes
+>playground>create routes.py or any file name u want
+
+after craeting a route def 
+go to project url file the add your newly created app's url there
+
+Templates
+Template are the interface to our application
+create a folder name called templates under our app folder 
+>playgound
+  > templates
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
