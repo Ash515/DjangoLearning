@@ -2,4 +2,4 @@
 An webapplication using Django framework 
 
 By
-Ashwin Kumar R
+Ashwin Kumar Ramaswamy
