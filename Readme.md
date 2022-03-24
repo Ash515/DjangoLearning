@@ -1,5 +1,5 @@
 # Django Learning 
-An webapplication using Django framework 
+An web application using Django framework 
 
 By
-Ashwin Kumar Ramaswamy
+Ashwin Kumar Ramaswamy 
